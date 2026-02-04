@@ -1,5 +1,6 @@
 import React from "react";
 import Navigation from "./components/Navigation";
+import ScratchCard from "./components/ScratchCard";
 import { EVENTS } from "./constants";
 
 const App: React.FC = () => {
@@ -115,6 +116,9 @@ const App: React.FC = () => {
                   The <br />{" "}
                   <span className="text-[#d4af37]">Preview Year</span>
                 </h2>
+                <p className="text-lg md:text-xl text-[#fdfbf7]/70 mt-4 max-w-xl">
+                  Ditch the home office. Work alongside Baltimore's tech community.
+                </p>
               </div>
               <div className="text-right">
                 <p className="text-xl md:text-2xl font-serif italic text-[#d4af37] mb-2">
@@ -126,35 +130,14 @@ const App: React.FC = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {EVENTS.map((event, idx) => (
-                <div
+                <ScratchCard
                   key={idx}
-                  className="relative overflow-hidden group bg-[#fdfbf7]/5 border border-[#fdfbf7]/10 p-8 rounded-3xl cursor-default"
-                >
-                  <div className="text-sm font-black uppercase tracking-widest mb-4 opacity-60">
-                    {event.date}
-                  </div>
-
-                  {/* Content to be covered */}
-                  <div className="blur-sm grayscale opacity-30 select-none pointer-events-none">
-                    <h3 className="text-2xl font-black uppercase mb-2 leading-tight">
-                      {event.locationName}
-                    </h3>
-                    <p className="text-sm font-bold uppercase tracking-widest mb-6 text-[#d4af37]">
-                      {event.neighborhood}
-                    </p>
-                    <div className="w-12 h-1 bg-[#d4af37] mb-6"></div>
-                    <p className="text-sm font-medium leading-relaxed opacity-80">
-                      {event.details}
-                    </p>
-                  </div>
-
-                  {/* Overlay for Coming Soon */}
-                  <div className="absolute inset-0 top-16 bg-[#1a2e44]/60 backdrop-blur-sm flex items-center justify-center p-6 text-center">
-                    <div className="bg-[#d4af37] text-[#1a2e44] px-4 py-2 rounded font-black uppercase text-xs tracking-[0.2em] transform -rotate-1 shadow-lg">
-                      Coming Soon...
-                    </div>
-                  </div>
-                </div>
+                  revealDate={event.revealDate}
+                  eventDate={event.date}
+                  locationName={event.locationName}
+                  neighborhood={event.neighborhood}
+                  details={event.details}
+                />
               ))}
             </div>
           </div>
