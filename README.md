@@ -1,21 +1,87 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Charm City Co-Work
 
-# Run and deploy your AI Studio app
+A city-wide co-working experience during Baltimore Tech Week. This web app serves as the landing page and information hub for Baltimore's first co-working crawl event.
 
-This contains everything you need to run your app locally.
+## About
 
-View your app in AI Studio: https://ai.studio/apps/drive/1xfbBSSLc5J4bOovg_szZ-0Sp0e6uMzE-
+Charm City Co-Work brings Baltimore's tech community together through a unique multi-day, multi-location co-working experience. The event aims to transform the way Baltimore builds by connecting creators across the city's vibrant neighborhoods.
 
-## Run Locally
+## Tech Stack
 
-**Prerequisites:**  Node.js
+- **Framework:** React 19
+- **Build Tool:** Vite
+- **Styling:** Tailwind CSS
+- **Language:** TypeScript
+- **AI Integration:** Google Gemini API
 
+## Getting Started
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
-# charm-city-co-work
+### Prerequisites
+
+- Node.js 18+
+- npm or yarn
+
+### Installation
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+The app will be available at `http://localhost:3000`
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+### Preview Production Build
+
+```bash
+npm run preview
+```
+
+## Environment Variables
+
+Create a `.env` file in the root directory:
+
+```env
+GEMINI_API_KEY=your_api_key_here
+```
+
+## Deployment (Vercel)
+
+This project is configured for easy deployment on Vercel:
+
+1. Push your code to GitHub
+2. Import the repository in Vercel
+3. Add environment variables in Vercel dashboard:
+   - `GEMINI_API_KEY` - Your Google Gemini API key
+4. Deploy
+
+Vercel will automatically detect the Vite configuration and build the project.
+
+## Project Structure
+
+```
+├── components/       # React components
+├── pages/           # Page components
+├── public/          # Static assets
+├── services/        # API services
+├── App.tsx          # Main app component
+├── constants.tsx    # App constants
+├── types.ts         # TypeScript types
+└── index.html       # HTML entry point
+```
+
+## License
+
+All Rights Reserved © 2026
+
+---
+
+Built for the Baltimore Tech Community
