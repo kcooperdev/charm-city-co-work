@@ -50,11 +50,11 @@ const App: React.FC = () => {
             <div className="flex flex-col sm:flex-row justify-center gap-6">
               <button
                 disabled
-                className="bg-[#1a2e44]/40 border border-[#fdfbf7]/20 text-[#fdfbf7]/50 px-12 py-5 rounded-full font-black text-xl uppercase tracking-widest shadow-xl cursor-not-allowed flex items-center gap-3"
+                className="bg-[#d4af37] border-2 border-[#d4af37] text-[#1a2e44] px-12 py-5 rounded-full font-black text-xl uppercase tracking-widest shadow-xl cursor-not-allowed flex items-center gap-3 opacity-90"
               >
                 Coming Soon...
                 <svg
-                  className="w-5 h-5 opacity-30"
+                  className="w-5 h-5"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
