@@ -4,11 +4,11 @@ import { CoWorkEvent } from "./types";
 export const EVENTS: CoWorkEvent[] = [
   {
     date: "Feb 24",
-    locationName: "Signal Hill Hub",
-    neighborhood: "Federal Hill",
+    locationName: "Adee's Coffee & Bar",
+    neighborhood: "Fells Point",
     vibe: "Modern & Professional",
     details:
-      "Kick off the crawl in the heart of South Baltimore. High ceilings and harbor views.",
+      "Adee's Coffee Roasters is the kind of place where the aroma grabs you from the sidewalk and the first sip convinces you to stay awhile.",
     revealDate: new Date("2026-02-05T00:00:00"),
   },
   {
