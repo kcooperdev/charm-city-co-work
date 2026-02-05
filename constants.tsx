@@ -13,11 +13,11 @@ export const EVENTS: CoWorkEvent[] = [
   },
   {
     date: "Feb 25",
-    locationName: "The Boiler Room",
-    neighborhood: "Station North",
+    locationName: "Tech Cafe Baltimore",
+    neighborhood: "Mid-Town Belvedere",
     vibe: "Industrial & Artsy",
     details:
-      "A creative stronghold for designers and developers alike. Great acoustics for focused work.",
+      "Tech Cafe is a no-frills neighborhood spot known for quick, comfort food and a laid-back vibe in Baltimore's Mid-Town Belvedere.",
     revealDate: new Date("2026-02-06T00:00:00"),
   },
   {
