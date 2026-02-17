@@ -6,6 +6,7 @@ interface ScratchCardProps {
   locationName: string;
   neighborhood: string;
   details: string;
+  eventUrl?: string;
 }
 
 const ScratchCard: React.FC<ScratchCardProps> = ({
@@ -14,6 +15,7 @@ const ScratchCard: React.FC<ScratchCardProps> = ({
   locationName,
   neighborhood,
   details,
+  eventUrl,
 }) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [isScratching, setIsScratching] = useState(false);
@@ -167,7 +169,7 @@ const ScratchCard: React.FC<ScratchCardProps> = ({
       </div>
 
       {/* Content container */}
-      <div className="relative h-[200px]">
+      <div className="relative h-[220px]">
         {/* Hidden content that gets revealed */}
         <div
           className={`transition-all duration-500 ${
@@ -184,6 +186,19 @@ const ScratchCard: React.FC<ScratchCardProps> = ({
           <p className="text-sm font-medium leading-relaxed opacity-80">
             {details}
           </p>
+          {eventUrl && (
+            <a
+              href={eventUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 mt-4 text-[#d4af37] font-bold uppercase tracking-widest text-sm hover:underline"
+            >
+              Register
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </a>
+          )}
         </div>
 
         {/* Scratch canvas overlay */}
@@ -191,7 +206,7 @@ const ScratchCard: React.FC<ScratchCardProps> = ({
           <canvas
             ref={canvasRef}
             width={350}
-            height={200}
+            height={220}
             className={`absolute inset-0 w-full h-full touch-none rounded-2xl ${canScratch ? 'cursor-pointer' : 'cursor-not-allowed'}`}
             onMouseDown={handleStart}
             onMouseMove={handleMove}

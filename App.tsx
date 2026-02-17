@@ -48,23 +48,27 @@ const App: React.FC = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row justify-center gap-6">
-              <button
-                disabled
-                className="bg-[#1a2e44]/40 border border-[#fdfbf7]/20 text-[#fdfbf7]/50 px-12 py-5 rounded-full font-black text-xl uppercase tracking-widest shadow-xl cursor-not-allowed flex items-center gap-3"
+              <a
+                href="https://luma.com/calendar/cal-NPUE9PQCDuvJFlZ"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 bg-[#d4af37] border-2 border-[#d4af37] text-[#1a2e44] px-12 py-5 rounded-full font-black text-xl uppercase tracking-widest shadow-xl hover:bg-[#e5c04a] hover:border-[#e5c04a] transition-colors"
               >
-                Coming Soon...
+                Check out events
                 <svg
-                  className="w-5 h-5 opacity-30"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
+                  className="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
                 >
                   <path
-                    fillRule="evenodd"
-                    d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
-                    clipRule="evenodd"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
                   />
                 </svg>
-              </button>
+              </a>
             </div>
           </div>
         </section>
@@ -137,6 +141,7 @@ const App: React.FC = () => {
                   locationName={event.locationName}
                   neighborhood={event.neighborhood}
                   details={event.details}
+                  eventUrl={event.eventUrl}
                 />
               ))}
             </div>
@@ -153,10 +158,15 @@ const App: React.FC = () => {
             <p className="text-2xl text-[#1a2e44]/70 mb-12 font-medium">
               Join the first city-wide co-working crawl in Baltimore history.
             </p>
-            <div className="inline-flex items-center gap-4 group text-[#1a2e44]/40 font-black text-xl uppercase tracking-widest border-b-4 border-[#1a2e44]/10 pb-2 cursor-not-allowed">
-              Registration Opening Soon
+            <a
+              href="https://luma.com/calendar/cal-NPUE9PQCDuvJFlZ"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-4 group text-[#1a2e44] font-black text-xl uppercase tracking-widest border-b-4 border-[#d4af37] pb-2 hover:text-[#d4af37] transition-colors"
+            >
+              Check out events
               <svg
-                className="w-6 h-6 opacity-20"
+                className="w-6 h-6"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -165,10 +175,10 @@ const App: React.FC = () => {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="3"
-                  d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
                 />
               </svg>
-            </div>
+            </a>
           </div>
         </section>
       </main>

@@ -10,6 +10,7 @@ export const EVENTS: CoWorkEvent[] = [
     details:
       "Adee's Coffee Roasters is the kind of place where the aroma grabs you from the sidewalk and the first sip convinces you to stay awhile.",
     revealDate: new Date("2026-02-05T00:00:00"),
+    eventUrl: "https://luma.com/7f7j7tbf",
   },
   {
     date: "Feb 25",
@@ -19,15 +20,17 @@ export const EVENTS: CoWorkEvent[] = [
     details:
       "Tech Cafe is a no-frills neighborhood spot known for quick, comfort food and a laid-back vibe in Baltimore's Mid-Town Belvedere.",
     revealDate: new Date("2026-02-06T00:00:00"),
+    eventUrl: "https://luma.com/pbeegk9h",
   },
   {
     date: "Feb 26",
-    locationName: "Oakes & Anchor",
-    neighborhood: "Fells Point",
+    locationName: "Red Emma's Bookstore Coffeehouse",
+    neighborhood: "Waverly",
     vibe: "Cozy & Historical",
     details:
-      "The final push. Work from a converted wharf space at the edge of the harbor.",
+      "9am - 5pm. Veg-friendly bookstore-cafe with a bright interior, featuring vegan versions of comfort food classics, espresso drinks and pastries.",
     revealDate: new Date("2026-02-09T00:00:00"),
+    eventUrl: "https://luma.com/51dbtezn",
   },
 ];
 

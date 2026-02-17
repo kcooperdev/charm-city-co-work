@@ -5,6 +5,7 @@ export interface CoWorkEvent {
   vibe: string;
   details: string;
   revealDate: Date;
+  eventUrl?: string;
 }
 
 export enum VibeType {
