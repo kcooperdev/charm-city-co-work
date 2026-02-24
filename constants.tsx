@@ -30,7 +30,7 @@ export const EVENTS: CoWorkEvent[] = [
     details:
       "9am - 5pm. Veg-friendly bookstore-cafe with a bright interior, featuring vegan versions of comfort food classics, espresso drinks and pastries.",
     revealDate: new Date("2026-02-09T00:00:00"),
-    eventUrl: "https://luma.com/51dbtezn",
+    eventUrl: "https://luma.com/dcfsuxe2",
   },
 ];
 
